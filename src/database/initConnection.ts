@@ -1,13 +1,7 @@
 import mongoose from 'mongoose';
 
 const getConnectionUri = () => {
-  const environment = process.env.npm_config_config || 'local';
-
-  require('dotenv').config({
-    path: environment !== 'production'
-      ? '.env.' + environment
-      : '.env'
-  });
+  const environment = process.env.DBENV || 'local';
 
   if (environment === 'local') {
     return `${process.env.DBTYPE}://${process.env.DBURI}:27017/${process.env.DATABASE}`;

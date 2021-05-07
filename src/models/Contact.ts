@@ -12,6 +12,7 @@ interface IContact extends Document {
 const commentSchema: Schema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
+  phone: { type: String, required: true },
   content: { type: String, required: true }
 });
 

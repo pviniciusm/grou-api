@@ -4,7 +4,8 @@
   "description": "API grourriculo",
   "main": "src/main.ts",
   "scripts": {
-    "start": "ts-node src/main.ts",
+    "start": "node dist/main.js",
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "cd .. && npx husky install api/.husky",
     "dev": "ts-node-dev --ignore-watch node_modules src/main.ts"

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API grourriculo",
   "main": "src/main.ts",
+  "types": "dist/main.d.ts",
   "scripts": {
     "start": "node dist/main.js",
     "postinstall": "tsc",
@@ -16,7 +17,6 @@
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.23",
-    "@types/mongoose": "^5.10.5",
     "@types/node": "^15.0.1",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
